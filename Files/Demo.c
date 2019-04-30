@@ -6,7 +6,6 @@ int main(void)
 {
 	//Variables
 	double temp[1], hum[1];		//Return values of sensor - Must be pointers or more preferably size-one arrays
-	temp[0] = hum[0] = 0;
 
 	//Setup
 	DHT_Setup();
