@@ -3,7 +3,7 @@
 ---
 
 **Description:**  
-A simple, yet clean, library to control the DHT11/DHT22 temperature and humidity sensor using AVR microcontrollers.  
+DHT11/DHT22 temperature and humidity sensor driver for AVR microcontrollers.  
 + This library does not use any hardware timer or interrupts.  
 + By contrast, the readings are accomplished with delays.  
 + Functions include:  
