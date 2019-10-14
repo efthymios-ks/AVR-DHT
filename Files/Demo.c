@@ -17,7 +17,7 @@ int main(void)
 		DHT_Read(temp, hum);
 		
 		//Check status
-		switch (DHT_Status)
+		switch (DHT_Status())
 		{
 			case (DHT_Ok):
 				//Print temperature
