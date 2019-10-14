@@ -5,7 +5,8 @@
 int main(void)
 {
 	//Variables
-	double temp[1], hum[1];		//Return values of sensor - Must be pointers or more preferably size-one arrays
+	double temperature[1];
+	double humidity[1];
 
 	//Setup
 	DHT_Setup();
@@ -14,17 +15,17 @@ int main(void)
 	while (1 == 1)
 	{
 		//Read from sensor
-		DHT_Read(temp, hum);
+		DHT_Read(temperature, humidity);
 		
 		//Check status
 		switch (DHT_Status())
 		{
 			case (DHT_Ok):
 				//Print temperature
-				//print(temp[0]);
+				//print(temperature[0]);
 	
 				//Print humidity
-				//print(hum[0]);	
+				//print(humidity[0]);	
 				break;
 			case (DHT_Error_Checksum):
 				//Do something
