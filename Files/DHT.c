@@ -32,7 +32,7 @@ void DHT_Setup(void)
 }
 
 //Get sensor status. 
-enum DHT_Status_t DHT_status(void)
+enum DHT_Status_t DHT_Status(void)
 {
 	return (__DHT_STATUS);
 }
