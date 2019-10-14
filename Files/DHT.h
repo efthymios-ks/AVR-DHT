@@ -40,7 +40,7 @@ enum DHT_Status_t
 
 //----- Prototypes---------------------------//
 void DHT_Setup(void);
-enum DHT_Status_t DHT_status(void);
+enum DHT_Status_t DHT_Status(void);
 void DHT_ReadRaw(uint8_t Data[4]);
 void DHT_ReadTemperature(double *Temperature);
 void DHT_ReadHumidity(double *Humidity);
