@@ -15,7 +15,7 @@
 //------ Headers ------//
 #include <inttypes.h>
 #include <util/delay.h>
-#include <avr/io.h> 
+#include <avr/io.h>
 
 #include "IO_Macros.h"
 #include "DHT_Settings.h"
@@ -39,13 +39,13 @@ enum DHT_Status_t
 //-----------------------------------------//
 
 //----- Prototypes---------------------------//
-void DHT_Setup(void);
-enum DHT_Status_t DHT_Status(void);
-void DHT_ReadRaw(uint8_t Data[4]);
-void DHT_ReadTemperature(double *Temperature);
-void DHT_ReadHumidity(double *Humidity);
-void DHT_Read(double *Temperature, double *Humidity);
-double DHT_ConvertToFahrenheit(double Temperature);
-double DHT_ConvertToKelvin(double Temperature);
+void DHT_Setup();
+enum DHT_Status_t DHT_GetStatus();
+enum DHT_Status_t DHT_ReadRaw(uint8_t Data[4]);
+enum DHT_Status_t DHT_GetTemperature(double *Temperature);
+enum DHT_Status_t DHT_GetHumidity(double *Humidity);
+enum DHT_Status_t DHT_Read(double *Temperature, double *Humidity);
+double DHT_CelsiusToFahrenheit(double Temperature);
+double DHT_CelsiusToKelvin(double Temperature);
 //-------------------------------------------//
 #endif
